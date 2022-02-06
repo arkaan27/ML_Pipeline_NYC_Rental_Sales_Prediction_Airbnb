@@ -112,7 +112,7 @@ def go(args):
     # you just created to add the "random_forest_dir" directory to the artifact, and finally use
     # run.log_artifact to log the artifact to the run
 
-    artifact = wand.Artifact(
+    artifact = wandb.Artifact(
         args.out_artifact,
         type="model_export",
         description= "Random forest pipeline export",
@@ -133,7 +133,7 @@ def go(args):
     run.summary['mae'] = mae
     ######################################
 
-    # Upload to W&B the feture importance visualization
+    # Upload to W&B the feature importance visualization
     run.log(
         {
           "feature_importance": wandb.Image(fig_feat_imp),
