@@ -6,10 +6,12 @@ to be retrained with the same cadence, necessitating an end-to-end pipeline that
 
 In this project you will build such a pipeline.
 
+Github link: [https://github.com/arkaan27/ML_Pipeline_NYC_Rental_Sales_Prediction_Airbnb.git](https://github.com/arkaan27/ML_Pipeline_NYC_Rental_Sales_Prediction_Airbnb.git)
 
+Wandb link: [https://wandb.ai/arkaan27/nyc_airbnb?workspace=user-arkaan27](https://wandb.ai/arkaan27/nyc_airbnb?workspace=user-arkaan27)
 
 ## Table of contents
-
+s
 - [Introduction](#build-an-ML-Pipeline-for-Short-Term-Rental-Prices-in-NYC)
 - [Preliminary steps](#preliminary-steps)
   * [Fork the Starter Kit](#fork-the-starter-kit)
