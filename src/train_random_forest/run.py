@@ -113,7 +113,7 @@ def go(args):
     # run.log_artifact to log the artifact to the run
 
     artifact = wandb.Artifact(
-        args.out_artifact,
+        args.output_artifact,
         type="model_export",
         description= "Random forest pipeline export",
 
