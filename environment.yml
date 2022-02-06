@@ -3,6 +3,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
+  - python==3.8.10
   - mlflow=1.14.1
   - ipython=7.21.0
   - notebook=6.2.0
@@ -15,3 +16,5 @@ dependencies:
   - pip=20.3.3
   - pip:
       - wandb==0.10.31
+      - zipp
+      - hydra-joblib-launcher==1.1.2

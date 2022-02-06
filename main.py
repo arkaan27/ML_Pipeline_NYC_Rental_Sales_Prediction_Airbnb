@@ -55,7 +55,7 @@ def go(config: DictConfig):
                 parameters={
                     "input_artifact": "sample.csv:latest",
                     "output_artifact": "clean_sample.csv",
-                    "output_type": "clean_sample",
+                    "output_type": "clean_data",
                     "output_description": "Data with outliers and null values removed",
                     "min_price": config['etl']['min_price'],
                     "max_price": config['etl']['max_price']
@@ -104,15 +104,14 @@ def go(config: DictConfig):
                 "main",
                 parameters={
                     "trainval_artifact": "trainval_data.csv:latest",
-                    "val_size": config['modeling']['val_size'],
-                    "random_seed": config['modeling']['random_seed'],
-                    "stratify_by": config['modeling']['stratify_by'],
+                    "val_size": config["modeling"]["val_size"],
+                    "random_seed": config["modeling"]["random_seed"],
+                    "stratify_by": config["modeling"]["stratify_by"],
                     "rf_config": rf_config,
-                    "max_tfidf_features": config['modeling']['max_tfidf_features'],
-                    "output_artifact": "random_forest_export"
-                }
+                    "max_tfidf_features": config["modeling"]["max_tfidf_features"],
+                    "output_artifact": "random_forest_export",
+                },
             )
-
             ##################
 
 
@@ -128,8 +127,6 @@ def go(config: DictConfig):
                 }
             )
             ##################
-
-            pass
 
 
 if __name__ == "__main__":

@@ -18,7 +18,6 @@ entry_points:
       output_type:
         description: Type of the artifact to create
         type: string
-        default: clean_data
 
       output_description:
         description: Artifact after cleaning the data
