@@ -12,6 +12,7 @@ entry_points:
       ref:
         description: Reference CSV file to compare the new csv to
         type: string
+        default: clean_sample.csv:latest
 
       kl_threshold:
         description: Threshold for the KL divergence test on the neighborhood group column
