@@ -118,7 +118,7 @@ def go(args):
         description= "Random forest pipeline export",
 
     )
-    mlflow.add_dir("random_forest_dir")
+    artifact.add_dir("random_forest_dir")
 
     run.log_artifact(artifact)
     ######################################
